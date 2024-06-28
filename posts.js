@@ -5,6 +5,10 @@ const initialState = {
   posts: [],
 };
 
+const userInitialState = {
+  users: [],
+}
+
 // Actions
 const addPostAction = (post) => {
   return {
@@ -17,6 +21,13 @@ const removePostAction = (id) => {
   return {
     type: "REMOVE_POST",
     id,
+  };
+};
+
+const addUser = (post) => {
+  return {
+    type: "ADD_POST",
+    payload: post,
   };
 };
 
